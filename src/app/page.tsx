@@ -8,7 +8,7 @@ export default function Home() {
   const {user} = useAuth();
   return (
     <>
-      <main className="flex items-center justify-center py-5">
+      <main className="flex flex-col items-center justify-center py-5">
         {user ? (
           <h1>Welcome to the app as a logged in user {user?.uid}</h1>
         ):(
